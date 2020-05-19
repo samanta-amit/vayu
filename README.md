@@ -1,6 +1,6 @@
-# ML Inference Server and Client
+# Serverless Server and Client
 
-Implementation of the inference server, clients (and the scheduler) using the boost asio framework.
+Implementation of the Serverless Framework, clients (and the scheduler) using the boost asio framework.
 
 ## Compiling ##
 
