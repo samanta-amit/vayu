@@ -9,8 +9,8 @@ find_package(Boost COMPONENTS system REQUIRED)
 # definition of requests that are passed b/w threads
 add_library(request_defs request_defs.cc)
 
-add_library(inference_pipeline inference_pipeline.cc)
-target_link_libraries(inference_pipeline request_defs pthread )
+add_library(serverless_pipeline serverless_pipeline.cc)
+target_link_libraries(serverless_pipeline request_defs pthread )
 
 # Connection Class
 add_library(tcp_connection tcp_connection.cc)
