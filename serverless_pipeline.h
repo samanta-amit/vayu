@@ -47,7 +47,7 @@ class serverless_pipeline {
         
     public:
         serverless_pipeline();
-        void make_inference(int client_id, int model_id, std::string model_input, tcp_connection::pointer);
+        void execute_serverless_function(int client_id, int model_id, std::string model_input, tcp_connection::pointer);
         void echo_input_back(int a, int b, std::string string_op, tcp_connection::pointer sp);
         // functions that are needed to be performed at each step of the pipeline.
         // each funcition runs in a separate thread (or threads) to pickup request 

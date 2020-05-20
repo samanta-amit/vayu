@@ -27,7 +27,7 @@ serverless_pipeline::serverless_pipeline() :
     srv_state.insert(std::make_pair(3, model_state(1,900,200)));
 }
 
-void serverless_pipeline::make_inference(int client_id, int model_id, std::string model_input, tcp_connection::pointer sp){
+void serverless_pipeline::execute_serverless_function(int client_id, int model_id, std::string model_input, tcp_connection::pointer sp){
     // request from the client first enters the pipeline from here.
     // acquire the nw_queue_mutex to put the request on the queue and
     // signal the nw_queue_cv to wake up the next thread in the pipeline
