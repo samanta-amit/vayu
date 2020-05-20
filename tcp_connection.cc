@@ -102,7 +102,7 @@ void tcp_connection::dispatch(const msgpack::object &deserialized)
 		//cout << "rpc_params array of length " << rpc_params.via.array.size << endl;
 
 		//Demonstrate simple "sum" function
-		if(rpc_method_str == "make_inference" and rpc_params.via.array.size == 3)
+		if(rpc_method_str == "execute_serverless_function" and rpc_params.via.array.size == 3)
 		{
 			const msgpack::object &arg1 = rpc_params.via.array.ptr[0];
 			const msgpack::object &arg2 = rpc_params.via.array.ptr[1];
