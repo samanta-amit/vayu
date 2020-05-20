@@ -32,7 +32,7 @@ void tcp_server::handle_accept(tcp_connection::pointer new_connection,
 }
 
 void tcp_server::enqueue_request(int client_id, int model_id, std::string model_input, tcp_connection::pointer sp){
-    this->inf_pipeline.make_inference(client_id, model_id, model_input, sp);
+    this->inf_pipeline.execute_serverless_function(client_id, model_id, model_input, sp);
 }
 
 // start the ioservice and the tcp server
