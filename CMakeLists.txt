@@ -22,7 +22,7 @@ target_link_libraries(tcp_connection
 add_executable(tcp_server tcp_server.cc)
 target_link_libraries(tcp_server
     tcp_connection
-    inference_pipeline
+    serverless_pipeline
     pthread
     ${Boost_SYSTEM_LIBRARY}
 )
