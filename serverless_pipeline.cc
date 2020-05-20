@@ -16,9 +16,9 @@ serverless_pipeline::serverless_pipeline() :
     ld_queue_mutex(),
     ld_queue_cv(),
     // spin up all the pipeline threads.
-    nw_req_thread(&inference_pipeline::process_nw_request, this),
-    pr_req_thread(&inference_pipeline::process_pr_request, this),
-    ld_req_thread(&inference_pipeline::process_ld_request, this){
+    nw_req_thread(&serverless_pipeline::process_nw_request, this),
+    pr_req_thread(&serverless_pipeline::process_pr_request, this),
+    ld_req_thread(&serverless_pipeline::process_ld_request, this){
     
     // random values for the models
     // model_state(cpu_wait_time,gpu_mem_time,gpu_time)
