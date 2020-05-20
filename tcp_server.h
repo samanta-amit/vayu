@@ -7,7 +7,7 @@
 #include <boost/bind.hpp>
 #include <boost/asio.hpp>
 #include "tcp_connection.h"
-#include "inference_pipeline.h"
+#include "serverless_pipeline.h"
 
 using boost::asio::ip::tcp;
 using namespace std;
