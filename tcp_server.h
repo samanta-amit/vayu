@@ -21,7 +21,7 @@ public:
 	void enqueue_request(int client_id, int model_id, std::string model_input, tcp_connection::pointer sp);
 
 private:
-	inference_pipeline inf_pipeline;
+	serverless_pipeline inf_pipeline;
     const uint32_t SERVER_PORT = 5005;
 	tcp::acceptor acceptor_;
     void start_accept();
