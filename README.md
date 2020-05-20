@@ -1,4 +1,4 @@
-# Serverless Server and Client
+# VAYU: Serverless Server and Client
 
 Implementation of the Serverless Framework, clients (and the scheduler) using the boost asio framework.
 
